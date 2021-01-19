@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>PIAIC CNC HTML Assignment 7</title>
+</head>
+<body>
+    <h1>Chapter # 7 - Forms</h1>
+    <form action="http://www.example.com/subscribe.php">
+        <table>
+            <tr>
+                <td width="590">
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        <label for="name">
+                            Name:
+                            <input type="text" name="name" required="required" />
+                        </label><br /><br />
+                        <label for="email">
+                            Email:
+                            <input type="text" name="email" />
+                        </label><br />
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td width="590">
+                    <fieldset>
+                        <legend>Your Review</legend>
+                        <label>How did you hear about us? </label>
+                        <select name="hearfrom">
+                            <option value="ipod">Google</option>
+                            <option value="radio">Facebook</option>
+                            <option value="computer">News</option>
+                            <option value="computer">Adds</option>
+                        </select>
+                        <br /> <br />
+                        <label>Would you visit us again? </label>
+                        <br />
+                        <input id="visitusyes" type="radio" name="visitusagain" value="yes">
+                        <label for="visitusyes">Yes</label>
+                        <input id="visitusno" type="radio" name="visitusagain" value="no">
+                        <label for="visitusno">No</label>
+                        <input id="visitusmaybe" type="radio" name="visitusagain" value="maybe">
+                        <label for="visitusmaybe">Maybe</label>
+                        <br /> <br />
+                        Comments:<br />
+                        <textarea name="comments" cols="50" rows="5">Enter your comments...</textarea>
+                        <br /> <br />
+                        <input id="signup" type="checkbox" name="signup" value="signup" />
+                        <label for="signup">Sign me up for email updates</label>
+                        <br />
+                        <input type="submit" name="subscribe" value="Submit Review" />
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
